@@ -1,0 +1,32 @@
+body{
+  background-color: #333333;
+}
+
+footer{
+  background-color: #000000;
+  padding: 50px;
+}
+
+h1{
+  color: #FFFFFF;
+  font-size: 75px;
+}
+
+h2{
+  color: #FFFFFF;
+}
+
+h3{
+  color: #52D0FE;
+  font-size: 22px;
+}
+
+p{
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+li{
+  color: #FFFFFF;
+  font-size: 16px;
+}
