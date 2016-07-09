@@ -1,3 +1,14 @@
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  /*margin-right: 127px;*/
+}
+
 body{
   background-color: #333333;
 }
@@ -9,7 +20,7 @@ footer{
 
 h1{
   color: #FFFFFF;
-  font-size: 75px;
+  font-size: 40px;
 }
 
 h2{
@@ -17,8 +28,16 @@ h2{
 }
 
 h3{
-  color: #52D0FE;
+  color: #7090A0;
   font-size: 22px;
+}
+
+a{
+  color: #D39393;
+}
+
+a:hover{
+  color: #E37373;
 }
 
 p{
@@ -37,7 +56,7 @@ li{
 
 .li-rep-link{
   margin-bottom: 50px;
-  color: #4682B4;
+  color: #D39393;
 }
 
 .p-rep-info{
