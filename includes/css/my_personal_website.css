@@ -30,3 +30,18 @@ li{
   color: #FFFFFF;
   font-size: 16px;
 }
+
+.rep-link{
+  font-size: 22px;
+}
+
+.li-rep-link{
+  margin-bottom: 50px;
+  color: #4682B4;
+}
+
+.p-rep-info{
+  color: #C0C0C0;
+  font-style: italic;
+  font-size: 15px;
+}
