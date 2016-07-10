@@ -9,7 +9,15 @@
 }
 
 body{
-  background-color: #333333;
+  background-image: url("https://samirsales.github.io/includes/img/office_bg.jpg");
+  background-size:cover;
+  /*background-color: #333333;*/
+}
+
+.transparent-layout{
+  background-color: rgba(51,51,51,0.85);
+  border: 1px solid white;
+  border-radius: 8px;
 }
 
 footer{
@@ -27,16 +35,16 @@ h2{
 }
 
 h3{
-  color: #7090A0;
+  color: #80A0C0;
   font-size: 22px;
 }
 
 a{
-  color: #D39393;
+  color: #E37373;
 }
 
 a:hover{
-  color: #E37373;
+  color: #FF6363;
 }
 
 p{
@@ -62,4 +70,20 @@ li{
   color: #C0C0C0;
   font-style: italic;
   font-size: 15px;
+}
+
+/*SCROLL BAR STYLE*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
