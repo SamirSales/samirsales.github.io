@@ -11,9 +11,9 @@
     <title>Samir Sales</title>
     <link rel="shortcut icon" href="includes/img/github.png">
   </head>
-  <body>
+  <body style="height:100%;">
 
-    <nav class="navbar navbar-inverse">
+    <nav id='navbar' class="navbar navbar-inverse" style="margin-bottom:0px;">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -33,39 +33,55 @@
       </div><!-- container-fluid -->
     </nav>
 
-    <div class="row" style="margin:30px; height:550px;">
-      <!-- left side -->
-      <div class="col-md-3">
+    <!-- main container -->
+    <div id="main_container" style="width:100%; overflow-y:auto;">
+      <div class="row" style="margin:30px; height:550px;">
+        <!-- left side -->
+        <div class="col-md-3">
 
-        <div align="center" class="transparent-layout" style="height:550px; padding-top:20px; padding-bottom:20px;">
-          <h1 align="center" style="margin: 0px;">Samir Sales</h1>
-          <h3 align="center" style="margin: 0px; color:#A0A0A0;">Software Developer</h3>
-          <br><br>
-          <img class="img-thumbnail" src="includes/img/samir_sales.jpg" alt="Samir Sales" style="width:216px;height:238px;">
-          <br><br><br>
-          <p>Contact Information:</p>
-          <p><a href="#"><span class="glyphicon glyphicon-envelope"></span> samir.sribeiro@gmail.com</a></p>
-          <p>
-            <a target="_blank" href="https://www.linkedin.com/in/samir-sales-916a39a4"><img src="includes/img/linkedin.png" style="width:30px;height:30px;"></a>
-            <a target="_blank" href="https://github.com/SamirSales"><img src="includes/img/github_link.png" style="width:30px;height:30px;"></a>
-            <a target="_blank" href="https://www.facebook.com/samir.sales.9"><img src="includes/img/facebook.png" style="width:30px;height:30px;"></a>
-          </p>
+          <div align="center" class="transparent-layout" style="height:550px; padding-top:20px; padding-bottom:20px;">
+            <h1 align="center" style="margin: 0px;">Samir Sales</h1>
+            <h3 align="center" style="margin: 0px; color:#A0A0A0;">Software Developer</h3>
+            <br><br>
+            <img class="img-thumbnail" src="includes/img/samir_sales.jpg" alt="Samir Sales" style="width:216px;height:238px;">
+            <br><br><br>
+            <p>Contact Information:</p>
+            <p><a href="#"><span class="glyphicon glyphicon-envelope"></span> samir.sribeiro@gmail.com</a></p>
+            <p>
+              <a target="_blank" href="https://www.linkedin.com/in/samir-sales-916a39a4"><img src="includes/img/linkedin.png" style="width:30px;height:30px;"></a>
+              <a target="_blank" href="https://github.com/SamirSales"><img src="includes/img/github_link.png" style="width:30px;height:30px;"></a>
+              <a target="_blank" href="https://www.facebook.com/samir.sales.9"><img src="includes/img/facebook.png" style="width:30px;height:30px;"></a>
+            </p>
+          </div>
+        </div>
+
+        <!-- right side -->
+        <div class="col-md-9">
+          <div id='div_content' class="transparent-layout" style="height:550px; padding-left:60px; padding-right:60px; overflow-y:auto">
+            <!-- about me -->
+            <!-- repositories -->
+          </div>
         </div>
       </div>
-      
-      <!-- right side -->
-      <div class="col-md-9">
-        <div id='div_content' class="transparent-layout" style="height:550px; padding-left:60px; padding-right:60px; overflow-y:auto">
-          <!-- about me -->
-          <!-- repositories -->
-        </div>
-      </div>
-    </div>
+    </div><!-- end of the main container -->
 
     <script>
       $(document).ready(function(){
         $("#div_content").load( "https://samirsales.github.io/views/about_me.html");
         $('#li_about_me').addClass('active');
+
+        // setting main div size
+        function resizing(){
+          var heightScreen = $(window).height();
+          var heightNavbar = $('#navbar').height();
+          $('#main_container').height(heightScreen-heightNavbar-20);
+          // $('.transparent-layout').height($('#main_container').height()-40);
+        }
+        resizing();
+
+        $(window).on('resize',function(){
+            resizing();
+        });
 
         $('#about_me_link').click(function(){
           $('#li_about_me').addClass('active');
