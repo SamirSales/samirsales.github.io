@@ -67,7 +67,7 @@
 
     <script>
       $(document).ready(function(){
-        $("#div_content").load( "https://samirsales.github.io/views/about_me.html");
+        $("#div_content").load( "https://samirsales.github.io/pages/about_me.html");
         $('#li_about_me').addClass('active');
 
         // setting main div size
@@ -86,13 +86,13 @@
         $('#about_me_link').click(function(){
           $('#li_about_me').addClass('active');
           $('#li_my_repositories').removeClass('active');
-          $("#div_content").load("https://samirsales.github.io/views/about_me.html");
+          $("#div_content").load("https://samirsales.github.io/pages/about_me.html");
         });
 
         $('#my_repositories_link').click(function(){
           $('#li_about_me').removeClass('active');
           $('#li_my_repositories').addClass('active');
-          $("#div_content").load("https://samirsales.github.io/views/repositories.html");
+          $("#div_content").load("https://samirsales.github.io/pages/repositories.html");
         });
       });
     </script>
