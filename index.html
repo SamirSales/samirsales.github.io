@@ -28,6 +28,12 @@
           <ul class="nav navbar-nav">
             <li id='li_about_me' class="active"><a id='about_me_link' href="#">About Me</a></li>
             <li id='li_my_repositories'><a id='my_repositories_link' href="#">My Repositories</a></li>
+            <li id='li_projects' class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li id='susmi_link'><a href="#">Susmi Manager</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div><!-- container-fluid -->
@@ -86,14 +92,24 @@
         $('#about_me_link').click(function(){
           $('#li_about_me').addClass('active');
           $('#li_my_repositories').removeClass('active');
+          $('#li_projects').removeClass('active');
           $("#div_content").load("https://samirsales.github.io/pages/about_me.html");
         });
 
         $('#my_repositories_link').click(function(){
           $('#li_about_me').removeClass('active');
           $('#li_my_repositories').addClass('active');
+          $('#li_projects').removeClass('active');
           $("#div_content").load("https://samirsales.github.io/pages/repositories.html");
         });
+
+        $('#susmi_link').click(function(){
+          $('#li_about_me').removeClass('active');
+          $('#li_my_repositories').removeClass('active');
+          $('#li_projects').addClass('active');
+          $("#div_content").load("https://samirsales.github.io/pages/susmi.html");
+        });
+
       });
     </script>
 
