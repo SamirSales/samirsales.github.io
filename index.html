@@ -65,7 +65,7 @@
 
         <!-- right side -->
         <div class="col-md-9">
-          <div id='div_content' class="transparent-layout" style="height:550px; padding:20px; overflow-y:auto">
+          <div id='div_content' class="transparent-layout" style="padding:20px; overflow-y:auto">
             <!-- about me -->
             <!-- susmi -->
             <!-- repositories -->
@@ -76,21 +76,8 @@
 
     <script>
       $(document).ready(function(){
-        $("#div_content").load( "https://samirsales.github.io/pages/about_me.html");
-        $('#li_about_me').addClass('active');
-
-        // setting main div size
-        function resizing(){
-          var heightScreen = $(window).height();
-          var heightNavbar = $('#navbar').height();
-          $('#main_container').height(heightScreen-heightNavbar-20);
-          // $('.transparent-layout').height($('#main_container').height()-40);
-        }
-        resizing();
-
-        $(window).on('resize',function(){
-            resizing();
-        });
+        // $("#div_content").load( "https://samirsales.github.io/pages/about_me.html");
+        // $('#li_about_me').addClass('active');
 
         $('#about_me_link').click(function(){
           $('#li_about_me').addClass('active');
