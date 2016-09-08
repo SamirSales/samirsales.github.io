@@ -9,6 +9,7 @@
     <!-- <script src="includes/js/jquery-3.0.0.min.js"></script> -->
     <!-- Bootstrap 3.3.6 is not compatible with jquery 3.0.0 -->
     <script src="includes/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script src="includes/js/jquery-ui.js"></script>
 
     <title>Samir Sales</title>
     <link rel="shortcut icon" href="includes/img/github.png">
@@ -51,7 +52,7 @@
             <h1 align="center" style="margin: 0px;">Samir Sales</h1>
             <h3 align="center" style="margin: 0px; color:#A0A0A0;">Software Developer</h3>
             <br><br>
-            <img class="img-thumbnail" src="includes/img/samir_sales2.jpg" alt="Samir Sales" style="width:213px;height:238px;">
+            <img id='test' class="img-thumbnail" src="includes/img/samir_sales2.jpg" alt="Samir Sales" style="width:213px;height:238px;">
             <br><br><br>
             <p>Contact Information:</p>
             <p><a href="#"><span class="glyphicon glyphicon-envelope"></span> samir.sribeiro@gmail.com</a></p>
@@ -66,6 +67,7 @@
         <!-- right side -->
         <div class="col-md-9">
           <div id='div_content' class="transparent-layout" style="padding:20px; overflow-y:auto">
+            <div id='div_content2'><div>
             <!-- about me -->
             <!-- susmi -->
             <!-- repositories -->
@@ -77,28 +79,40 @@
     <script>
       $(document).ready(function(){
         // start loading about_me.html
-        $("#div_content").load( "https://samirsales.github.io/pages/about_me.html");
+        $("#div_content2").load( "https://samirsales.github.io/pages/about_me.html");
         $('#li_about_me').addClass('active');
 
         $('#about_me_link').click(function(){
           $('#li_about_me').addClass('active');
           $('#li_my_repositories').removeClass('active');
           $('#li_projects').removeClass('active');
-          $("#div_content").load("https://samirsales.github.io/pages/about_me.html");
+
+          $("#div_content2").hide('fade',300, function(){
+            $("#div_content2").load("https://samirsales.github.io/pages/about_me.html");
+            $("#div_content2").show('fade',300);
+          });
         });
 
         $('#my_repositories_link').click(function(){
           $('#li_about_me').removeClass('active');
           $('#li_my_repositories').addClass('active');
           $('#li_projects').removeClass('active');
-          $("#div_content").load("https://samirsales.github.io/pages/repositories.html");
+
+          $("#div_content2").hide('fade',300, function(){
+            $("#div_content2").load("https://samirsales.github.io/pages/repositories.html");
+            $("#div_content2").show('fade',300);
+          });
         });
 
         $('#susmi_link').click(function(){
           $('#li_about_me').removeClass('active');
           $('#li_my_repositories').removeClass('active');
           $('#li_projects').addClass('active');
-          $("#div_content").load("https://samirsales.github.io/pages/susmi.html");
+
+          $("#div_content2").hide('fade',400, function(){
+            $("#div_content2").load("https://samirsales.github.io/pages/susmi.html");
+            $("#div_content2").show('fade',400);
+          });
         });
 
       });
