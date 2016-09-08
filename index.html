@@ -79,40 +79,36 @@
     <script>
       $(document).ready(function(){
         // start loading about_me.html
-        $("#div_content2").load( "https://samirsales.github.io/pages/about_me.html");
+        $("#div_content2").load("https://samirsales.github.io/pages/about_me.html");
         $('#li_about_me').addClass('active');
+
+        function setContent(refHTML){
+          $("#div_content2").hide('fade',400, function(){
+            $("#div_content2").load(refHTML, function(){
+              $("#div_content2").show('fade',400);
+            });
+          });
+        }
 
         $('#about_me_link').click(function(){
           $('#li_about_me').addClass('active');
           $('#li_my_repositories').removeClass('active');
           $('#li_projects').removeClass('active');
-
-          $("#div_content2").hide('fade',300, function(){
-            $("#div_content2").load("https://samirsales.github.io/pages/about_me.html");
-            $("#div_content2").show('fade',300);
-          });
+          setContent("https://samirsales.github.io/pages/about_me.html");
         });
 
         $('#my_repositories_link').click(function(){
           $('#li_about_me').removeClass('active');
           $('#li_my_repositories').addClass('active');
           $('#li_projects').removeClass('active');
-
-          $("#div_content2").hide('fade',300, function(){
-            $("#div_content2").load("https://samirsales.github.io/pages/repositories.html");
-            $("#div_content2").show('fade',300);
-          });
+          setContent("https://samirsales.github.io/pages/repositories.html");
         });
 
         $('#susmi_link').click(function(){
           $('#li_about_me').removeClass('active');
           $('#li_my_repositories').removeClass('active');
           $('#li_projects').addClass('active');
-
-          $("#div_content2").hide('fade',300, function(){
-            $("#div_content2").load("https://samirsales.github.io/pages/susmi.html");
-            $("#div_content2").show('fade',300);
-          });
+          setContent("https://samirsales.github.io/pages/susmi.html");
         });
 
       });
