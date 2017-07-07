@@ -1,126 +1,91 @@
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- fix the bug of navbar collapsing  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="includes/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="includes/css/my_personal_website.css">
-    <script src="includes/js/jquery-2.0.3.min.js"></script>
-    <!-- <script src="includes/js/jquery-3.0.0.min.js"></script> -->
-    <!-- Bootstrap 3.3.6 is not compatible with jquery 3.0.0 -->
-    <script src="includes/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-    <script src="includes/js/jquery-ui.js"></script>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Samir Sales</title>
+<link rel="shortcut icon" href="includes/img/github.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="includes/css/medium.css">
 
-    <title>Samir Sales</title>
-    <link rel="shortcut icon" href="includes/img/github.png">
-  </head>
-  <body style="height:100%;">
+</head>
+<body>
 
-    <nav id='navbar' class="navbar navbar-inverse" style="margin-bottom:0px;">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <!-- link from the middle -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li id='li_about_me' class="active"><a id='about_me_link' href="#">About Me</a></li>
-            <li id='li_my_repositories'><a id='my_repositories_link' href="#">My Repositories</a></li>
-            <li id='li_projects' class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li id='susmi_link'><a href="#">Susmi Manager</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div><!-- container-fluid -->
-    </nav>
+<div class="header">
+  <h1 class="header-title"><span style="color:#596989;">I'm</span> Samir Sales</h1>
+  <h1 class="header-title-2">Software Developer</h1>
+  <img class="header-image" src="includes/img/samir_sales.jpg" />
+  <p class="header-location">Fortaleza, CE, Brazil</p>
+  <p class="header-email">samir.sribeiro@gmail.com</p>
 
-    <!-- main container -->
-    <div id="main_container" style="width:100%; overflow-y:auto;">
-      <div class="row" style="margin-top:25px; margin-left:10px; margin-right:10px; height:550px;">
-        <!-- left side -->
-        <div class="col-md-3">
+  <div class="header-link-img-div">
+    <a target="_blank" href="https://www.linkedin.com/in/samir-sales-916a39a4">
+      <img class="header-image-link" src="includes/img/linkedin.png"></a>
+    <a target="_blank" href="https://github.com/SamirSales">
+      <img class="header-image-link" src="includes/img/github_link.png"></a>
+    <a target="_blank" href="https://www.facebook.com/samir.sales.9">
+      <img class="header-image-link" src="includes/img/facebook.png"></a>
+  </div>
 
-          <div align="center" class="transparent-layout" style="height:550px; padding-top:20px; padding-bottom:20px;">
-            <h1 align="center" style="margin: 0px;">Samir Sales</h1>
-            <h3 align="center" style="margin: 0px; color:#A0A0A0;">Software Developer</h3>
-            <br><br><br>
-            <img class="img-circle" src="includes/img/samir_sales3.jpg" alt="Samir Sales" style="width:180px;height:180px;">
-            <br><br><br>
-            <p>Fortaleza, BR</p>
-            <p><a href="#"><span class="glyphicon glyphicon-envelope"></span> samir.sribeiro@gmail.com</a></p>
-            <p>
-              <a target="_blank" href="https://www.linkedin.com/in/samir-sales-916a39a4"><img src="includes/img/linkedin.png" style="width:30px;height:30px;"></a>
-              <a target="_blank" href="https://github.com/SamirSales"><img src="includes/img/github_link.png" style="width:30px;height:30px;"></a>
-              <a target="_blank" href="https://www.facebook.com/samir.sales.9"><img src="includes/img/facebook.png" style="width:30px;height:30px;"></a>
-            </p>
-          </div>
-        </div>
+</div>
 
-        <!-- right side -->
-        <div class="col-md-9">
-          <div id='div_content' class="transparent-layout" style="padding:20px; height:550px; overflow-y:auto">
-            <div id='div_content2'>
-            <!-- about me -->
-            <!-- susmi -->
-            <!-- repositories -->
-          </div>
-        </div>
-      </div>
-    </div><!-- end of the main container -->
+<div class="main-layout">
+  <div class="square">
+    <h2 class="information-title">A Brief About Me</h2>
+    <p class="information" style="text-align: justify;">I am graduated in Telecommunications Engineering in the Federal Institute of Science and Technology from Ceará (IFCE), in Brazil. My main features are my dedication, creativity and humorously. My focus is the software development and the computer systems.</p>
+  </div>
 
-    <script>
-      $(document).ready(function(){
-        // start loading about_me.html
-        $("#div_content2").load("https://samirsales.github.io/pages/about_me.html");
-        $('#li_about_me').addClass('active');
+  <div class="square">
+    <h2 class="information-title">Professional Work Experience</h2>
+    <p class="information"><b>WDA Tecnologia</b><br>
+  Since December 2016 (current job)<br>
+  Job Title: Software Developer<br><br>
 
-        function setContent(refHTML){
-          $("#div_content2").hide('fade',400, function(){
-            $("#div_content2").load(refHTML, function(){
-              $("#div_content2").show('fade',400);
-            });
-          });
-        }
+  <b>Technological Innovation Lab of IFCE</b><br>
+  From August 2013 to November 2016 (3 years and 4 months)<br>
+  Job Title: Android and JavaFX Developer<br><br>
 
-        $('#about_me_link').click(function(){
-          $('#li_about_me').addClass('active');
-          $('#li_my_repositories').removeClass('active');
-          $('#li_projects').removeClass('active');
-          setContent("https://samirsales.github.io/pages/about_me.html");
-        });
+  <b>Instituto Iracema de Pesquisa e Inovação</b><br>
+  From 2012 to 2013 (for 1 year and 1 month)<br>
+  Job Title: Mobile Developer (iOS)<br><br>
 
-        $('#my_repositories_link').click(function(){
-          $('#li_about_me').removeClass('active');
-          $('#li_my_repositories').addClass('active');
-          $('#li_projects').removeClass('active');
-          setContent("https://samirsales.github.io/pages/repositories.html");
-        });
+  <b>Sapien Soluções Inteligentes</b><br>
+  In 2011 (during 5 months)<br>
+  Job Title: Firmware developer (PIC microcontrollers)</p>
+  </div>
 
-        $('#susmi_link').click(function(){
-          $('#li_about_me').removeClass('active');
-          $('#li_my_repositories').removeClass('active');
-          $('#li_projects').addClass('active');
-          setContent("https://samirsales.github.io/pages/susmi.html");
-        });
+  <div class="square">
+    <h2 class="information-title">Knowledge</h2>
+    <div class="knownledge-item"><p class="information">C/C++</p></div>
+    <div class="knownledge-item"><p class="information">Objective-C</p></div>
+    <div class="knownledge-item"><p class="information">Java</p></div>
+    <div class="knownledge-item"><p class="information">JSF</p></div>
+    <div class="knownledge-item"><p class="information">PrimeFaces</p></div>
+    <div class="knownledge-item"><p class="information">Ruby on Rails</p></div>
+    <div class="knownledge-item"><p class="information">PHP(CodeIgniter)</p></div>
+    <div class="knownledge-item"><p class="information">Javascript</p></div>
+    <div class="knownledge-item"><p class="information">jQuery</p></div>
+    <div class="knownledge-item"><p class="information">AngularJS</p></div>
+    <div class="knownledge-item"><p class="information">Cordova</p></div>
+    <div class="knownledge-item"><p class="information">HTML</p></div>
+    <div class="knownledge-item"><p class="information">CSS</p></div>
+    <div class="knownledge-item"><p class="information">Bootstrap</p></div>
+    <div class="knownledge-item"><p class="information">SQL</p></div>
+    <div class="knownledge-item"><p class="information">Android</p></div>
+    <div class="knownledge-item"><p class="information">iOS</p></div>
+    <div class="knownledge-item"><p class="information">Windows</p></div>
+    <div class="knownledge-item"><p class="information">Linux</p></div>
+    <div class="knownledge-item"><p class="information">Mac</p></div>
+  </div>
 
-      });
-    </script>
+  <div class="square">
+    <h2 class="information-title">Languages</h2>
+    <div class="knownledge-item"><p class="information">Portuguese (Native)</p></div>
+    <div class="knownledge-item"><p class="information">English</p></div>
+    <div class="knownledge-item"><p class="information">Spanish</p></div>
+    <div class="knownledge-item"><p class="information">French</p></div>
+  </div>
 
-    <!-- <br> -->
-    <!-- <footer class="transparent-layout" align="center" style="padding:15px; margin-left:45px; margin-right:45px; margin-bottom:10px;">
-      <div align="center">
-        <img class="img-circle" src="includes/img/ic_android.jpg" style="width:50px;height:50px;">
-        <img class="img-circle" src="includes/img/ic_java.png" style="width:50px;height:50px; margin-left:10px;">
-        <img class="img-circle" src="includes/img/ic_ruby.jpg" style="width:50px;height:50px; margin-left:10px;">
-      </div>
-    </footer> -->
-  </body>
+  <br><br><br><br>
+</div> <!-- main layout -->
+
+</body>
 </html>
