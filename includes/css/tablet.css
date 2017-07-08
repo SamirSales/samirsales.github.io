@@ -16,8 +16,8 @@ body{
 }
 
 .header{
-    width: 779px;
-    padding: 30px;
+    width: 100%;
+    /*padding: 30px;*/
     background: rgba(105, 121, 153, 0.4);
 }
 
@@ -27,6 +27,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     margin-top: 0px;
+    padding-top: 30px;
     color: #333333;
 }
 
@@ -55,7 +56,7 @@ body{
 
 .header-link-img-div{
   margin: auto;
-  margin-top: 40px;
+  padding: 30px;
   max-width: 140px;
 }
 
