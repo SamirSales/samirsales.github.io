@@ -1,32 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+body{
+  background-image: url("../img/clean.jpg");
+  background-size:cover;
+}
+
 .header{
     position: fixed;
     top: 0;
-    right: 0;
-    width: 100%;
-    background-color: #333333;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 0px;
+    background: rgba(105, 121, 153, 0.4);
+}
+
+.header-title{
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-top: 25px;
+    color: #333333;
+}
+
+.header-title-2{
+    color: black;
+    padding: 6px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    color: #696969;
+}
+
+.header-img-div{
+    max-width: 150px;
+    max-height: 150px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.header-image{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
+
+.header-link-img-div{
+  margin: auto;
+  margin-top: 30px;
+  max-width: 140px;
+}
+
+.header-image-link{
+  width:40px;
+  height:40px;
+  opacity: 0.8;
+}
+
+.header-image-link:hover{
+    opacity: 1.0;
+}
+
+.header-location{
+  margin-top: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: oblique;
+  color: #494949;
+}
+
+.header-email{
+  margin-top: 6px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: oblique;
+  color: #494949;
+  text-decoration: underline;
 }
 
 .main-layout{
-  position: absolute;
-  top: 100px;
-  left: 0;
-  border: 1px solid green;
-  margin: 25px;
+  position: relative;
+  left: 350px;
+  margin-top: 60px;
+  padding: 0px;
+  width: 54%;
+}
+
+.information-title{
+  font-family: "Arial", Arial, sans-serif;
+  color: #697999;
+  font-size: 24px;
 }
 
 .information{
   font-family: "Arial", Arial, sans-serif;
+  color: #696969;
+  text-align: justify;
+  font-size: 18px;
 }
 
 .square {
-    float: left;
-    margin: 5px;
-    padding: 15px;
-    max-width: 320px;
-    height: 320px;
-    border: 1px solid black;
+    padding: 6px;
+    margin-bottom: 30px;
 }
 
-body{
-    background-color: #ffffff;
+.knownledge-item{
+    display: inline-block;
+    width: 200px;
+    padding: 3px;
 }
