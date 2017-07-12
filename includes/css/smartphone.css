@@ -122,3 +122,24 @@ body{
   /*color: #696969;*/
   color: #69A982;
 }
+
+.code-bg{
+  background-color: #333333;
+  border: 1px solid #000000;
+  padding: 18px;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, serif;
+  /*font-family: "Lucida Console", Lucida , sans-serif;*/
+  /*line-height: 1.13;*/
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.highlight-code{
+  color: #69A982;
+}
+
+.comment-code{
+  color: #A0A0A0;
+  font-style: italic;
+}
