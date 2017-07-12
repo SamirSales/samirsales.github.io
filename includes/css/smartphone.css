@@ -129,8 +129,7 @@ body{
   padding: 18px;
   border-radius: 5px;
   font-family: "Courier New", Courier, serif;
-  /*font-family: "Lucida Console", Lucida , sans-serif;*/
-  /*line-height: 1.13;*/
+  font-weight: bold;
   font-size: 14px;
   color: #FFFFFF;
 }
