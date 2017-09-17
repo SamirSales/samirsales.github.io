@@ -11,7 +11,7 @@ h2{
 }
 
 body{
-  background-image: url("../img/clean.jpg");
+  background-image: url("../../img/clean.jpg");
   background-size:cover;
 }
 
@@ -25,7 +25,7 @@ body{
     color: black;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 50px;
     margin-top: 0px;
     padding-top: 30px;
     color: #333333;
@@ -36,7 +36,7 @@ body{
     padding: 6px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 25px;
     color: #696969;
 }
 
@@ -90,13 +90,13 @@ body{
 }
 
 .main-layout{
-  padding: 15px;
+  padding: 40px;
 }
 
 .information-title{
   font-family: "Arial", Arial, sans-serif;
   color: #697999;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .information{
@@ -104,7 +104,7 @@ body{
   font-family: "Arial", Arial, sans-serif;
   color: #696969;
   text-align: justify;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .square {
@@ -114,31 +114,6 @@ body{
 
 .knownledge-item{
     display: inline-block;
-    width: 130px;
+    width: 200px;
     padding: 6px;
-}
-
-.highlight{
-  /*color: #696969;*/
-  color: #69A982;
-}
-
-.code-bg{
-  background-color: #333333;
-  border: 1px solid #000000;
-  padding: 18px;
-  border-radius: 5px;
-  font-family: "Courier New", Courier, serif;
-  font-weight: bold;
-  font-size: 14px;
-  color: #FFFFFF;
-}
-
-.highlight-code{
-  color: #69A982;
-}
-
-.comment-code{
-  color: #A0A0A0;
-  font-style: italic;
 }

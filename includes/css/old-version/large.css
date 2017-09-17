@@ -11,7 +11,7 @@ h2{
 }
 
 body{
-  background-image: url("../img/clean.jpg");
+  background-image: url("../../img/clean.jpg");
   background-size:cover;
 }
 
@@ -21,7 +21,6 @@ body{
     left: 0;
     width: 300px;
     height: 100%;
-    padding: 0px;
     background: rgba(105, 121, 153, 0.4);
 }
 
@@ -30,7 +29,7 @@ body{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
-    margin-top: 25px;
+    margin-top: 36px;
     color: #333333;
 }
 
@@ -44,21 +43,21 @@ body{
 }
 
 .header-img-div{
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 200px;
+    max-height: 200px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .header-image{
-    width:150px;
-    height:150px;
+    width:200px;
+    height:200px;
     border-radius: 50%;
 }
 
 .header-link-img-div{
   margin: auto;
-  margin-top: 30px;
+  margin-top: 10px;
   max-width: 140px;
 }
 
@@ -94,22 +93,19 @@ body{
 .main-layout{
   position: relative;
   left: 350px;
-  margin-top: 90px;
-  padding: 0px;
-  width: 54%;
+  margin-top: 100px;
+  width: 69%;
 }
 
 .information-title{
   font-family: "Arial", Arial, sans-serif;
   color: #697999;
-  font-size: 24px;
 }
 
 .information{
   font-family: "Arial", Arial, sans-serif;
   color: #696969;
   text-align: justify;
-  font-size: 18px;
 }
 
 .square {
