@@ -12,7 +12,7 @@ h2{
 
 body{
   background-size:cover;
-  background-color: #EFEFEF;
+  background-color: #F9F9F9;
 }
 
 .header{
@@ -180,17 +180,77 @@ body{
 
 .code-bg{
   background-color: #333333;
+  color: #FFFFFF;
   border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+.code-tab-bg{
+  padding-top: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+
+  border: 0px;
+  border-bottom-style: solid;
+  border-bottom-color: #C0C0C0;
+
+  background-color: #484848;
+}
+
+.code-tab{
+  margin-left: 1px;
+  margin-right: 0px;
+  margin-bottom: -1px;
+
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+
+  border: 0px;
+  border-style: solid;
+  border-color: #C0C0C0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-color: #333333;
+
+  width: 90px;
+  background-color: #333333;
+
+  position: relative;
+  color: #C0DEF0;
+  display:inline-block;
+  cursor: pointer;
+}
+
+.unselected{
+  background-color: #3C3C3C;
+}
+
+.tab-content{
   padding: 18px;
-  border-radius: 5px;
   font-family: "Courier New", Courier, serif;
   font-weight: bold;
   font-size: 14px;
+}
+
+.x-close{
+  color: #C0C0C0;
+  position: absolute;
+  right: 5px;
+}
+
+.x-close:hover{
   color: #FFFFFF;
 }
 
 .highlight-code{
-  color: #69A982;
+  /*color: #69A982;*/
+  color: #aec6cf;
+}
+
+.highlight-code-str{
+  color: #B3E5FC;
 }
 
 .comment-code{
