@@ -260,3 +260,30 @@ body{
   color: #A0A0A0;
   font-style: italic;
 }
+
+.research-table{
+  color: #555555;
+  width: 100%;
+  padding: 6px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: #CFD8DC;
+  border-radius: 9px;
+}
+
+.research-table td{
+  padding: 8px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+
+.research-table a {
+  float: right;
+  text-decoration:none;
+  color: #7e96cf;
+}
+
+.research-table a:hover {
+  color: #a0c0c0;
+}
