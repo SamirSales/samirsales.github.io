@@ -91,13 +91,12 @@ header > .image-link-content > a > img:hover {
 
 .panel{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: 400px;
   margin: auto;
   text-align: center;
   font-family: arial;
   display: inline-block;
   margin: 10px;
+  width: calc(100% - 20px);
 }
 
 .panel:hover {
@@ -121,19 +120,19 @@ header > .image-link-content > a > img:hover {
   color: #333333;
 }
 
+.knownledge-items{
+  text-align: left;
+}
+
 .knownledge-items div{
     display: inline-block;
-    width: 270px;
-    padding: 5px;
-
-    padding-left: 20px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #CFD8DC;
+    padding: 5px 10px 5px 10px;
+    margin: 2px 0px;
+    border: solid 1px #CFD8DC;
     color: #696969;
     border-radius: 9px;
+    text-align: center;
+    width: calc(100% - 20px);
 }
 
 .knownledge-items div:hover{
@@ -151,8 +150,8 @@ header > .image-link-content > a > img:hover {
   border: 1px solid #000000;
   border-radius: 3px;
   text-align: left;
-  padding: 20px;
-  width: calc(100% - 40px);
+  padding: 20px 10px;
+  width: calc(100% - 20px);
   
   font-family: "Courier New", Courier, serif;
   font-weight: bold;
@@ -192,10 +191,46 @@ header > .image-link-content > a > img:hover {
   color: #a0c0c0;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 400px) {
+  
+  .knownledge-items div{
+    width: calc(50% - 40px);
+    margin: 2px 0px 2px 4px;
+  }
+}
 
-  .main-content{
+@media only screen and (min-width: 800px) {
+
+  .knownledge-items div{
+    width: calc(33% - 30px);
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .panel{
+    margin: 10px 1% 10px 1%;
+    width: 47%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .main-content {
+    padding: 30px 80px;
+    width: calc(100% - 160px);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .main-content {
     padding: 30px 160px;
     width: calc(100% - 320px);
   }
+
+  .knownledge-items div{
+    width: calc(25% - 30px);
+  }
+
 }
+
