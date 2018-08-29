@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+  padding: 6px 0px;
+}
+
+body {
+  background-size:cover;
+  background-color: #F9F9F9;
+  overflow-y: auto;
+}
+
+header {
+    top: 0;
+    padding: 70px 0px;
+    background: rgba(33, 33, 33, 0.4);
+    background-image: url("../img/qwerty_dark.jpg");
+    background-size:cover;
+    width: 100%;
+    position: relative;
+}
+
+header img {
+  max-width: 170px;
+  max-height: 170px;
+  margin-left: calc(50% - 86px);
+  border: solid 1px #dfdfdf;
+}
+
+header h1 {
+  text-align: center;
+  font-family: Courier, monospace;
+}
+
+header h1.header-title {
+    font-size: 26px;
+    margin-top: 15px;
+    color: #FFFFFF;
+}
+
+header h1.header-title-2 {
+    padding: 6px;
+    font-size: 18px;
+    color: #B2EBF2;
+}
+
+.image-link-content {
+  text-align: center;
+}
+
+header > .image-link-content > a > img {
+  width:35px;
+  height:35px;
+  margin: 3px;
+  border: 1px solid #FFFFFF;
+  opacity: 0.8;
+}
+
+header > .image-link-content > a > img:hover {
+    opacity: 1.0;
+}
+
+.main-content{
+  padding: 30px 15px;
+  width: calc(100% - 30px);
+}
+
+.main-content .square {
+  padding: 6px;
+  margin-bottom: 60px;
+  font-family: "Arial", Arial, sans-serif;
+  width: calc(100% - 12px);
+  text-align: center;
+}
+
+.main-content .square > .title {
+  color: #607D8B;
+  margin-bottom: 26px;
+  text-align: left;
+}
+
+.main-content .square > div.information {
+  font-size: 18px;
+  color: #696969;
+  text-align: justify;
+  width: 100%;
+}
+
+.panel{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  display: inline-block;
+  margin: 10px;
+}
+
+.panel:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.panel .title {
+  background-color: #455A64;
+  color: #FFF;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.panel .content {
+  border: 1px;
+  padding: 15px 10px;
+}
+
+.content p{
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.knownledge-items div{
+    display: inline-block;
+    width: 270px;
+    padding: 5px;
+
+    padding-left: 20px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #CFD8DC;
+    color: #696969;
+    border-radius: 9px;
+}
+
+.knownledge-items div:hover{
+  border-color: #90A4AE;
+  cursor: pointer;
+}
+
+.highlight{
+  color: #78909C;
+}
+
+.bg-dark{
+  color: #FFFFFF;
+  background-color: #333333;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  text-align: left;
+  padding: 20px;
+  width: calc(100% - 40px);
+  
+  font-family: "Courier New", Courier, serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.unselected{
+  background-color: #3C3C3C;
+}
+
+.highlight-code-str{
+  color: #B3E5FC;
+}
+
+.research-table{
+  color: #555555;
+  width: 100%;
+  padding: 6px;
+  border: solid 1px #CFD8DC;
+  border-radius: 9px;
+  text-align: left;
+}
+
+.research-table td{
+  padding: 8px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+
+.research-table a {
+  float: right;
+  text-decoration:none;
+  color: #7e96cf;
+}
+
+.research-table a:hover {
+  color: #a0c0c0;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .main-content{
+    padding: 30px 160px;
+    width: calc(100% - 320px);
+  }
+}
