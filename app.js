@@ -5,6 +5,7 @@ new Vue({
         profession: 'Software Developer',
         contacts: [
             {icon: 'fas fa-envelope', text: 'samir.sribeiro@gmail.com', link: 'mailto:samir.sribeiro@gmail.com'},
+            {icon: 'fas fa-globe-americas', text: 'samirsales.github.io', link: 'https://samirsales.github.io/'},
             {icon: 'fab fa-linkedin-in', text: 'LinkedIn', link: 'https://www.linkedin.com/in/samir-sales-916a39a4/'},
             {icon: 'fab fa-github', text: 'GitHub', link: 'https://github.com/SamirSales'},
             {icon: 'fab fa-twitter', text: 'Twitter', link: 'https://twitter.com/samirsales'},

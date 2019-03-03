@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #e0e0e0;
 }
 
 #app {
@@ -20,7 +20,8 @@ body {
 }
 
 .right-side{
-    background-color: #55bb55;
+    /* background-color: #01553e; */
+    background-color: #333333;
     width: 280px;
     text-align: center;
 }
@@ -62,7 +63,9 @@ body {
 .contact a{
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
 }
 
 .contact a:hover{
@@ -78,8 +81,12 @@ body {
     color: white;
     font-family: Roboto, sans-serif;
     text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .language {
     color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
 }

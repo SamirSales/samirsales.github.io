@@ -16,8 +16,9 @@
 <body>
     <div id="app">
         <div class="left-side">
-            <p>Teste</p>
-            <i class="fab fa-linkedin-in"></i>
+            <div class="section">
+                <h2>CAREER PROFILE</h2>
+            </div>
         </div>
 
         <div class="right-side">
@@ -36,7 +37,7 @@
             <div class="section">
                 <h3>{{languagesSection}}</h3>
                 <div v-for="language in languages">
-                    <p class='language'>{{language.description}}</p>
+                    <p class='language'>{{language.description}} <span style="color: #909090;">({{language.fluency}})</span></p>
                 </div>
             </div>
         </div>
