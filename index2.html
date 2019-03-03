@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Samir Sales</title>
+
+  <link rel="shortcut icon" href="includes/img/ic_launcher.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text/css" href="includes/css/main.css?v=3"/> -->
+
+  <link href="includes/fontawesome-free-5.7.2-web/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <script src="vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="left-side">
+            <p>Teste</p>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+
+        <div class="right-side">
+            <div class="profile">
+                <img src="includes/img/samir_sales_200px.jpg" />
+                <h1>{{name}}</h1>
+                <h2>{{profession}}</h2>
+            </div>
+            
+            <div class="section">
+                <div v-for="contact in contacts">
+                    <p class='contact'><a :href="contact.link"><i :class="contact.icon"></i>{{contact.text}}</a></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>{{languagesSection}}</h3>
+                <div v-for="language in languages">
+                    <p class='language'>{{language.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
