@@ -23,6 +23,8 @@ new Vue({
             "I'm brazilian, graduated in Telecommunications Engineering from the Federal Institute of Science and Technology of Ceará (IFCE) and a lover of the software development. ",
             "I'm dedicated in the things I do and really humorous at the work. I like to learn new stuff as new technologies, new idioms, among other things that satisfy me and make me grow up."  
         ],
+        skillsProficiencySection: 'Skills & Proficieny',
+        experienceSection: 'Experiences',
     },
     methods: {
         // methods of  this Vue Instance
