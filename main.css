@@ -51,19 +51,18 @@ body {
     border-radius: 50%;
 }
 
-.section {
+.right-side .section {
     padding: 30px 3px;
 }
 
 .contact, .language, .section h3 {    
-    padding: 8px 20px;
+    padding: 8px 30px;
     text-align: left;
 }
 
 .contact a{
     color: white;
     text-decoration: none;
-    /* font-size: 16px; */
     font-family: Roboto, sans-serif;
     font-size: 14px;
 }
@@ -89,4 +88,30 @@ body {
     color: white;
     font-family: Roboto, sans-serif;
     font-size: 14px;
+}
+
+.left-side {
+    padding: 60px;
+}
+
+.left-side h2{
+    color: #333333;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 18px;
+}
+
+.left-side h2 .fas{
+    font-size: 30px;
+    margin-right: 10px;
+    vertical-align: -4px
+}
+
+.left-side .section p{
+    color: #606060;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    padding: 6px 0px;
 }

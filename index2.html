@@ -17,7 +17,10 @@
     <div id="app">
         <div class="left-side">
             <div class="section">
-                <h2>CAREER PROFILE</h2>
+                <h2><i class="fas fa-user-circle"></i>{{careerProfileSection}}</h2>
+                <div v-for="paragraph in careerProfileDescrition">
+                    <p>{{paragraph}}</p>
+                </div>                
             </div>
         </div>
 
