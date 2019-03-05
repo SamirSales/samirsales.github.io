@@ -29,7 +29,7 @@ new Vue({
             {
                 enterprise: 'WDA Tecnologia & Inovação',
                 office: 'Software Developer',
-                startDate: '2016-12-1',
+                startDate: new Date('2016-12'),
                 endDate: new Date(),
                 projects: [
                     {
@@ -77,8 +77,8 @@ new Vue({
             {
                 enterprise: 'IFCE',
                 office: 'Software Developer',
-                startDate: '2013-8-1',
-                endDate: '2016-11-1',
+                startDate: new Date('2013-8'),
+                endDate: new Date('2016-11'),
                 projects: [
                     {
                         name: 'W3Sat',
@@ -117,8 +117,8 @@ new Vue({
             {
                 enterprise: 'Instituto Iracema de Pesquisa e Inovação',
                 office: 'Software Developer',
-                startDate: '2012-8-1',
-                endDate: '2013-8-1',
+                startDate: new Date('2012-8'),
+                endDate: new Date('2013-8'),
                 projects: [
                     {
                         name: 'Portáctil',
@@ -134,19 +134,16 @@ new Vue({
     },
     methods: {
         // methods of  this Vue Instance
-        changeName: function(event) {
-            this.name = event.target.value;
+        getLabelDates: function(date1, date2){
+            var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            
+            var today = new Date();
+            if(date2.getFullYear() === today.getFullYear() && date2.getMonth() === today.getMonth()){
+                return months[date1.getMonth()] + " " + date1.getFullYear() + " - Present";
+            }
+            
+            return months[date1.getMonth()] + " " + date1.getFullYear() + " - " + months[date2.getMonth()] + " " + date2.getFullYear();
         },
-        updateCoordinates: function(event){
-            this.x = event.clientX;
-            this.y = event.clientY;
-        },
-        alertMe: function(event){
-            alert(event.target.value);
-        },
-        nameLengthMethod: function(){
-            return this.name.length > 5 ? "'name' is bigger than 5" : "'name' is NOT bigger than 5."; 
-        }
     },
     computed:{
         // Dependent properties

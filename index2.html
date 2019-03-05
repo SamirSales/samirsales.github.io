@@ -24,15 +24,33 @@
             </div>
 
             <div class="section">
-                <h2><i class="fas fa-code"></i>{{skillsProficiencySection}}</h2>
-                <canvas id="myChart" width="300" height="100"></canvas>             
+                <h2><i class="fas fa-briefcase"></i>{{experienceSection}}</h2>
+                <div v-for="experience in experiences">
+                    <div class="office-and-dates">
+                            <h3>{{experience.office}}</h3>
+                            <h3 class="date">{{getLabelDates(experience.startDate, experience.endDate)}}</h3>
+                    </div>
+                    
+                    <p class="enterprise">{{experience.enterprise}}</p>
+
+                    <div class="projects">
+                        <div v-for="project in experience.projects">
+                            <p>{{project.name}} ({{project.type}})</p>
+                            <p>{{project.description}}</p>
+
+                            <!-- <p class="technologies-label">Tecnologies:</p> -->
+                            <span class="technology" v-for="technology in project.technologies">
+                                {{technology}}
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>                
             </div>
 
             <div class="section">
-                <h2><i class="fas fa-briefcase"></i>{{experienceSection}}</h2>
-                <div v-for="paragraph in careerProfileDescrition">
-                    <p>{{paragraph}}</p>
-                </div>                
+                <h2><i class="fas fa-code"></i>{{skillsProficiencySection}}</h2>
+                <canvas id="myChart" width="300" height="100"></canvas>             
             </div>
         </div>
 

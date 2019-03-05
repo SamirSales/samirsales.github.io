@@ -54,7 +54,7 @@ body {
     padding: 30px 3px;
 }
 
-.contact, .language, .section h3 {    
+.contact, .language, .right-side .section h3 {    
     padding: 8px 25px;
     text-align: left;
 }
@@ -75,7 +75,7 @@ body {
     margin-right: 8px;
 }
 
-.section h3{
+.right-side .section h3{
     color: white;
     font-family: Roboto, sans-serif;
     text-transform: uppercase;
@@ -117,4 +117,57 @@ body {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     padding: 6px 0px;
+}
+
+.left-side .section h3{
+    color: #333333;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.office-and-dates{
+    display: flex;
+}
+
+.office-and-dates h3{
+    width: 50%;
+}
+
+.office-and-dates h3.date{
+    text-align: right;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.left-side .section .enterprise {
+    color: #227979;
+}
+
+.projects {
+    padding-bottom: 30px;
+}
+
+.left-side .projects .technologies-label{
+    font-size: 10px;
+    font-weight: 800;
+    color: #909090;
+    text-transform: uppercase;
+}
+
+.technology{
+    color: #707070;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 2px 8px;
+    margin: 1px;
+    display: inline-block;
+}
+
+.projects div {
+    padding-bottom: 20px;
 }
