@@ -24,6 +24,11 @@
             </div>
 
             <div class="section">
+                <h2><i class="fas fa-code"></i>{{skillsProficiencySection}}</h2>
+                <canvas id="myChart" width="300" height="100"></canvas>             
+            </div>
+
+            <div class="section">
                 <h2><i class="fas fa-briefcase"></i>{{experienceSection}}</h2>
                 <div v-for="experience in experiences">
                     <div class="office-and-dates">
@@ -46,11 +51,6 @@
                     </div>
                     
                 </div>                
-            </div>
-
-            <div class="section">
-                <h2><i class="fas fa-code"></i>{{skillsProficiencySection}}</h2>
-                <canvas id="myChart" width="300" height="100"></canvas>             
             </div>
         </div>
 
