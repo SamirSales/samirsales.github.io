@@ -37,7 +37,7 @@ var app = new Vue({
                         type: 'Web System',
                         description: 'It is a robust university system developed with micro services architecture, using Spring Framework (Java) in its backend and AngularJS in the frontend. This system also has technologies such as Redis, Elasticsearch and Project Reactor (2.0 and 3.0).',
                         technologies: [
-                            'Java', 'SpringBoot', 'AngularJS', 'Redis', 'ElasticSearch', 'SASS', 'Scrum'
+                            'Java', 'SpringBoot', 'AngularJS', 'Project Reactor', 'Redis', 'ElasticSearch', 'SASS', 'Scrum'
                         ]
                     },
                     {
