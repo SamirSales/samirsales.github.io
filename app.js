@@ -35,7 +35,7 @@ var app = new Vue({
                     {
                         name: 'Integrees',
                         type: 'Web System',
-                        description: 'It is a robust university system developed with micro services architecture, using Spring Framework (Java) in its backend and AngularJS in the frontend. This system also has technologies such as Redis, Elasticsearch and Project Reactor (2.0 and 3.0).',
+                        description: ['It is a robust university system developed with micro services architecture, using Spring Framework (Java) in its backend and AngularJS in the frontend. This system also has technologies such as Redis, Elasticsearch and Project Reactor (2.0 and 3.0).'],
                         technologies: [
                             'Java', 'SpringBoot', 'AngularJS', 'Project Reactor', 'Redis', 'ElasticSearch', 'SASS'
                         ]
@@ -43,7 +43,7 @@ var app = new Vue({
                     {
                         name: 'Dashboard',
                         type: 'Test Web Application',
-                        description: 'This is a web application to read and show as a dashboard readings from a meter. This project have a Java backend using SpringBoot and a frontend using Angular4.',
+                        description: ['This is a web application to read and show as a dashboard readings from a meter. This project have a Java backend using SpringBoot and a frontend using Angular4.'],
                         technologies: [
                             'Java', 'SpringBoot', 'Angular', 'HTML', 'CSS'
                         ]
@@ -51,7 +51,7 @@ var app = new Vue({
                     {
                         name: 'Pantheon',
                         type: 'Android Application',
-                        description: 'Using the same Java library for meter communication called EletraMCI. We\'ve built an Android application to read and configure the electricity meter via WI-FI. This application does a small subset of Olimpo\'s commands.',
+                        description: ['Using the same Java library for meter communication called EletraMCI. We\'ve built an Android application to read and configure the electricity meter via WI-FI. This application does a small subset of Olimpo\'s commands.'],
                         technologies: [
                             'Java', 'Android', 'XML'
                         ]
@@ -59,7 +59,9 @@ var app = new Vue({
                     {
                         name: 'Olimpo',
                         type: 'JavaFX Desktop Application',
-                        description: 'Building a JavaFX desktop app that communicates using serial port to a energy meter. The app read several meter attributes, show reports, write configurations and performs quality tests. This app will be used by a chinese company called Hexing. We use javafx as main programming language, JSSC java library to read/write in COM ports. Many design patterns like factory, facade, memento, observer and strategy patterns. We also use continuous integration tool called Team City, unity tests using junit, functional tests using Test Complete. We use agile methodology, having 15 days sprints.',
+                        description: ['Building a JavaFX desktop app that communicates using serial port to a energy meter. The app read several meter attributes, show reports, write configurations and performs quality tests. This app will be used by a chinese company called Hexing.',
+                        'We use javafx as main programming language, JSSC java library to read/write in COM ports. Many design patterns like factory, facade, memento, observer and strategy patterns. We also use continuous integration tool called Team City, unity tests using junit, functional tests using Test Complete.',
+                        'We use agile methodology, having 15 days sprints.'],
                         technologies: [
                             'JavaFX', 'Android', 'XML', 'Velocity'
                         ]
@@ -67,7 +69,7 @@ var app = new Vue({
                     {
                         name: 'EletraMCI',
                         type: 'Electricity Meter Communication Library',
-                        description: 'This is a Java library to be used in all future application to communicates a computer and an electricity meter.',
+                        description: ['This is a Java library to be used in all future application to communicates a computer and an electricity meter.'],
                         technologies: [
                             'Java'
                         ]
@@ -83,7 +85,8 @@ var app = new Vue({
                     {
                         name: 'W3Sat',
                         type: 'Android Application',
-                        description: 'This application is developed to help users make the antennas pointing. With the help of a web system that manages information on the latitude, longitude and altitude of geostationary satellites, the mobile device uses this information to return elevation and azimuth values according to the geolocation and altitude of the mobile. In addition to the calculation of antenna pointing, the application allows the mobile device to be used as an adjustment tool, through the use of the magnetometer and accelerometer of the device.',
+                        description: ['This application is developed to help users make the antennas pointing. With the help of a web system that manages information on the latitude, longitude and altitude of geostationary satellites, the mobile device uses this information to return elevation and azimuth values according to the geolocation and altitude of the mobile.',
+                        'In addition to the calculation of antenna pointing, the application allows the mobile device to be used as an adjustment tool, through the use of the magnetometer and accelerometer of the device.'],
                         technologies: [
                             'Java', 'Android', 'SQLite', 'XML'
                         ]
@@ -91,7 +94,8 @@ var app = new Vue({
                     {
                         name: 'Vendor',
                         type: 'Android and Web Application',
-                        description: 'This system was developed to guide vendors by providing maps that locate the best stores according to logistics and managing customer, product and order registrations. Products registration and customer information management is done by a web application. It is through the web application that the android application makes its updates. The Android application also allows the user to register customers and to register orders with suggestions of a several forms of payment.',
+                        description: ['This system was developed to guide vendors by providing maps that locate the best stores according to logistics and managing customer, product and order registrations.',
+                        'Products registration and customer information management is done by a web application. It is through the web application that the android application makes its updates. The Android application also allows the user to register customers and to register orders with suggestions of a several forms of payment.'],
                         technologies: [
                             'Java', 'Android', 'SQLite', 'XML'
                         ]
@@ -99,7 +103,8 @@ var app = new Vue({
                     {
                         name: 'Mobile Elevator Control',
                         type: 'Android Application',
-                        description: 'It consists of an application that allows the user to send control commands to elevators that work with specific hardware developed by the company Infolev. Communication can be done via Bluetooth, Wifi and Serial. Buttons, beeps, advertisements images and videos are shown to users while the application is running and can be edited by a settings file generated by a desktop application developed in parallel.',
+                        description: ['It consists of an application that allows the user to send control commands to elevators that work with specific hardware developed by the company Infolev. Communication can be done via Bluetooth, Wifi and Serial.',
+                        'Buttons, beeps, advertisements images and videos are shown to users while the application is running and can be edited by a settings file generated by a desktop application developed in parallel.'],
                         technologies: [
                             'Java', 'Android', 'SQLite', 'XML'
                         ]
@@ -107,7 +112,7 @@ var app = new Vue({
                     {
                         name: 'Configuration File Builder Application',
                         type: 'JavaFX DeskTop Application',
-                        description: 'It consists of an application that allows the user to send control commands to elevators that work with specific hardware developed by the company Infolev. Communication can be done via Bluetooth, Wifi and Serial. Buttons, beeps, advertisements images and videos are shown to users while the application is running and can be edited by a settings file generated by a desktop application developed in parallel.',
+                        description: ['Application that allows the development of configuration files for the mobile application that controls elevators. It provides simulations of the graphical interface of the mobile application.'],
                         technologies: [
                             'JavaFX', 'XML'
                         ]
@@ -123,7 +128,7 @@ var app = new Vue({
                     {
                         name: 'Portáctil',
                         type: 'iOS Application',
-                        description: 'Application developed to work in conjunction with the Portáctil, a device designed to assist the visually handicapped in the braille reading. The application stores books in file format and manages read information according to commands that are sent by the Portáctil via Bluetooth.',
+                        description: ['Application developed to work in conjunction with the Portáctil, a device designed to assist the visually handicapped in the braille reading. The application stores books in file format and manages read information according to commands that are sent by the Portáctil via Bluetooth.'],
                         technologies: [
                             'iOS', 'Objective-C', 'SQLite'
                         ]
@@ -136,7 +141,9 @@ var app = new Vue({
             {
                 name: 'Pickle Wiki',
                 type: 'Web System',
-                description: 'The Pickle Wiki is an open source encyclopedia project, written collaboratively and based on the Wikipedia system. Unlike the traditional Wikipedia, the Pickle Wiki is a search tool with a focus on internal networks. It is a single page application which uses React JS as front-end and Spring Boot as back-end. To data persistence it was chosen the PostgresSQL and to make text handling it was chosen the Markdown. The application\'s name is a parody of the name Wikipedia combined with the expression \"Pickle Rick\" from the American animation Rick and Morty (created by Justin Roiland and Dan Harmon). The genial suggestion of the name was made by John Soares during a brainstorm.',
+                description: ['The Pickle Wiki is an open source encyclopedia project, written collaboratively and based on the Wikipedia system. Unlike the traditional Wikipedia, the Pickle Wiki is a search tool with a focus on internal networks.',
+                'It is a single page application which uses React JS as front-end and Spring Boot as back-end. To data persistence it was chosen the PostgresSQL and to make text handling it was chosen the Markdown.',                
+                'The application\'s name is a parody of the name Wikipedia combined with the expression \"Pickle Rick\" from the American animation Rick and Morty (created by Justin Roiland and Dan Harmon). The genial suggestion of the name was made by John Soares during a brainstorm.'],
                 link: 'https://github.com/SamirSales/pickle-wiki/',
                 technologies: [
                     'Java', 'SpringBoot', 'PostgreeSQL', 'ReactJS'
@@ -145,7 +152,9 @@ var app = new Vue({
             {
                 name: 'Key Keeper',
                 type: 'Android Application',
-                description: 'Android application, developed in Java, that allows the user to maintain their bank of passwords in a mobile device. It is quite useful though it sounds dangerous. The user has the option to create a password to access the application. This prevents others from accessing the his/her bank of passwords. Another security measure is the encryption key saved in the application that encrypts saved passwords in the bank. The application also allows the user to import and export data through .xls files.',
+                description: ['Android application, developed in Java, that allows the user to maintain their bank of passwords in a mobile device. It is quite useful though it sounds dangerous.',
+                'The user has the option to create a password to access the application. This prevents others from accessing the his/her bank of passwords. Another security measure is the encryption key saved in the application that encrypts saved passwords in the bank.',
+                'The application also allows the user to import and export data through .xls files.'],
                 link: 'https://github.com/SamirSales/android-password-keeper',
                 technologies: [
                     'Java', 'Android', 'SQLite'

@@ -41,8 +41,11 @@
                     <div class="projects">
                         <div v-for="project in experience.projects">
                             <p class="project-name">{{project.name}} ({{project.type}})</p>
-                            <p>{{project.description}}</p>
 
+                            <div class="project-descriptions">
+                                <p class="project-paragraph" v-for="paragraph in project.description">{{paragraph}}</p>
+                            </div>
+                            
                             <span class="technology" v-for="technology in project.technologies">
                                 {{technology}}
                             </span>
@@ -59,7 +62,10 @@
 
                     <div class="projects">
                         <p class="project-name">{{project.name}} ({{project.type}})</p>
-                        <p>{{project.description}}</p>
+                        
+                        <div class="project-descriptions">
+                            <p class="project-paragraph" v-for="paragraph in project.description">{{paragraph}}</p>
+                        </div>
 
                         <span class="technology" v-for="technology in project.technologies">
                             {{technology}}

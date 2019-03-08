@@ -175,3 +175,11 @@ body {
 .left-side .projects .project-name{
     color: #728989;
 }
+
+.left-side .projects .project-paragraph {
+    padding: 3px 0px;
+}
+
+.left-side .projects .project-descriptions{
+    padding: 0px 0px 6px 0px;
+}
