@@ -17,11 +17,13 @@ body {
 
 .left-side{
     width: calc(100% - 280px);
+    padding: 60px;
 }
 
 .right-side{
     background-color: #333333;
     width: 280px;
+    min-width: 280px;
     text-align: center;
 }
 
@@ -87,10 +89,6 @@ body {
     color: white;
     font-family: Roboto, sans-serif;
     font-size: 14px;
-}
-
-.left-side {
-    padding: 60px;
 }
 
 .left-side .section {
@@ -182,4 +180,35 @@ body {
 
 .left-side .projects .project-descriptions{
     padding: 0px 0px 6px 0px;
+}
+
+@media only screen and (max-width: 1125px) {
+    #app {
+        margin: 30px 30px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #app {
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .left-side {
+        position: absolute;
+        width: 100%;
+        padding: 0px;
+        top: 737px;
+        background-color: #ffffff;
+    }
+
+    .left-side .section {
+        padding: 30px;
+    }
+
+    .right-side {
+        position: absolute;
+        width: 100%;
+    }
 }
