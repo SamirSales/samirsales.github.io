@@ -1,6 +1,6 @@
 [
 {
-"name": "O vendedor de armas", 
+"name": "O Vendedor de Armas", 
 "about": "Livro escrito por Hugh Laurie (O Dr. House)",
 "price": 5, 
 "sold": false, 
@@ -18,6 +18,16 @@
     {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio1.jpeg"},
     {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio2.jpeg"},
     {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio3.jpeg"}
+    ]
+},
+
+{
+"name": "Ruby on Rails", 
+"about": "Desenvolvimento Fácil e Rapido de Aplicações",
+"price": 5, 
+"sold": false, 
+"images": [
+    {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/ror.jpg"}
     ]
 }
 ]
