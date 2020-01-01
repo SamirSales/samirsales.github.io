@@ -1,11 +1,11 @@
 [
 {
-name: "O vendedor de armas", 
-about: "Livro escrito por Hugh Laurie (O Dr. House)",
-price: 5, 
-sold: false, 
-images: [
-    {src: "https://github.com/SamirSales/samirsales.github.io/blob/master/data/ovda.jpeg?raw=true"},
+"name": "O vendedor de armas", 
+"about": "Livro escrito por Hugh Laurie (O Dr. House)",
+"price": 5, 
+"sold": false, 
+"images": [
+    {"src": "https://github.com/SamirSales/samirsales.github.io/blob/master/data/ovda.jpeg?raw=true"}
     ]
-},
+}
 ]
