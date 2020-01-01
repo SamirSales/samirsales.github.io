@@ -5,8 +5,19 @@
 "price": 5, 
 "sold": false, 
 "images": [
-    {"src": "https://github.com/SamirSales/samirsales.github.io/blob/master/data/store/ovda.jpeg?raw=true"},
-    {"src": "https://github.com/SamirSales/samirsales.github.io/blob/master/data/store/ovda.jpeg"}
+    {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/ovda.jpeg"}
+    ]
+},
+
+{
+"name": "Calculadora Casio", 
+"about": "Estou me desfazendo dessa belezura que me foi bastante útil no meu curso de Eng. de Telecom no IFCE. Está em ótimas condições, com manual e tudo que vem com ela... A bateria tá excelente (e ainda nem foi trocada). Obs.: Tem um adesivo da Apple na capinha de proteção dela :)",
+"price": 25, 
+"sold": false, 
+"images": [
+    {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio1.jpeg"},
+    {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio2.jpeg"},
+    {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio3.jpeg"}
     ]
 }
 ]
