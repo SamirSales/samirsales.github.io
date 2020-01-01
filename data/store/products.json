@@ -5,7 +5,8 @@
 "price": 5, 
 "sold": false, 
 "images": [
-    {"src": "https://github.com/SamirSales/samirsales.github.io/blob/master/data/ovda.jpeg?raw=true"}
+    {"src": "https://github.com/SamirSales/samirsales.github.io/blob/master/data/store/ovda.jpeg?raw=true"},
+    {"src": "https://github.com/SamirSales/samirsales.github.io/blob/master/data/store/ovda.jpeg"}
     ]
 }
 ]
