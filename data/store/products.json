@@ -15,9 +15,9 @@
 "price": 25, 
 "sold": false, 
 "images": [
-    {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio1.jpeg"},
-    {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio2.jpeg"},
-    {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio3.jpeg"}
+    {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio1.jpg"},
+    {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio2.jpg"},
+    {"src": "https://raw.githubusercontent.com/SamirSales/samirsales.github.io/master/data/store/casio3.jpg"}
     ]
 },
 
